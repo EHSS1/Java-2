@@ -2,18 +2,26 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        
+        // Calcule a hipotenusa de um triângulo retângulo usando os lados a e b fornecidos pelo usuário.
+
         Scanner scan = new Scanner(System.in);
-
-        //pedir o numero do raio
-
-        System.out.println("Digite o raio do Circulo: ");
-        String nome = scan.nextLine();
-
         
-        System.out.printf("Area do circulo, %s" + nome);
+        //Informar valor do lado a 
+        System.out.println("Digite o valor do lado a: ");
+        double a = scan.nextDouble();
+
+        //Informar valor do lado b
+        System.out.println("Digite o valor do lado b:");
+        double b = scan.nextDouble();
+
+        //Calcular hipotenusa
+        double hipotenusa = Math.sqrt(a * a + b * b );
+
+        //Imprimir Hipotenusa
+
+        System.out.printf("A hipotenusa do triângulo é: %.2f\n", hipotenusa);
 
 
-
-        
     }
 }
