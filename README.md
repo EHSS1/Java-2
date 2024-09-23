@@ -1,1 +1,1 @@
-Exercícios classe Math.
+Exercícios Classe Math.
